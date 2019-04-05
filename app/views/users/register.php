@@ -36,6 +36,7 @@
                            <a href="<?php echo URLROOT; ?>/users/login" class="btn btn-light btn-block">Have an account? Login</a>
                        </div>
                    </div>
+                   <p>everything testing</p>
                </form>
            </div>
        </div>
