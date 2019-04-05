@@ -27,10 +27,10 @@
                        <span class="invalid-feedback"><?php echo $data['confirm_password_err']; ?></span>
                    </div>
 
-
+                            <!--the submit button is here -->
                    <div class="row">
                        <div class="col">
-                           <input type="submit" value="Join" class="btn btn-success btn-block">
+                           <input type="submit" value="Join" class="btn btn-success btn-block" id="ajaxAccount">
                        </div>
                        <div class="col">
                            <a href="<?php echo URLROOT; ?>/users/login" class="btn btn-light btn-block">Have an account? Login</a>
@@ -41,4 +41,28 @@
        </div>
    </div>
 
-<?php require APPROOT . '/views/inc/footer.php';?>
+
+<!--<script>-->
+<!--        document.getElementById('ajaxForm').addEventListener('submit', postName);-->
+<!---->
+<!--    function postName(e){-->
+<!--        e.preventDefault();-->
+<!---->
+<!--        var name = document.getElementById('name').value;-->
+<!--        var password=document.getElementById('password').value;-->
+<!--        var params = "username= "+name +"&password="+password+"&submit=submit";-->
+<!---->
+<!--        var xhr = new XMLHttpRequest();-->
+<!--        xhr.open('POST', 'http://localhost/SharePosts/users/register.php', true);-->
+<!--        xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');-->
+<!---->
+<!--        xhr.onload = function(){-->
+<!--            console.log (this.responseText);-->
+<!--        }-->
+<!---->
+<!--        xhr.send(params);-->
+<!--    }-->
+<!---->
+<!--</script>-->
+
+<?php require APPROOT . '/views/inc/footer.php'; ?>
