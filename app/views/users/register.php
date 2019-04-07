@@ -26,8 +26,19 @@
                        <input type="password" name="confirm-password" id="confirm-password" class="form-control form-control-lg <?php echo (!empty($data['confirm_password_err']))? 'is-invalid' : ''; ?>" value="<?php echo $data['confirm_password']; ?>">
                        <span class="invalid-feedback"><?php echo $data['confirm_password_err']; ?></span>
                    </div>
+                   <div class="form-group">
+                       <label for="age"> Enter Age: <sup>*</sup></label>
+                       <input type="text" name="age" id="age" class="form-control form-control-lg" placeholder="enter age">
+                       <span class="invalid-age"></span>
+                   </div>
+                   <div class="form-group">
+                       <label for="username"> Enter Username: <sup>*</sup></label>
+                       <input type="text" name="username" id="username" class="form-control form-control-lg" placeholder="Enter Username">
+                       <span class="invalid-username"></span>
+                   </div>
 
-                            <!--the submit button is here -->
+
+                   <!--the submit button is here -->
                    <div class="row">
                        <div class="col">
                            <input type="submit" value="Join" class="btn btn-success btn-block" id="ajaxAccount">
@@ -36,7 +47,6 @@
                            <a href="<?php echo URLROOT; ?>/users/login" class="btn btn-light btn-block">Have an account? Login</a>
                        </div>
                    </div>
-                   <p>everything testing</p>
                </form>
            </div>
        </div>

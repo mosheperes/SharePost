@@ -56,8 +56,18 @@
                     }
                 }
 
+                // validate age
+                if (empty($data['age'])){
+                    $data['age_err'] = "PLease Enter An Age";
+                }
+
+
+                // validate username
+                if (empty($data['username'])){
+                    $data['username_err'] = "PLease Enter A Username";
+                }
                 // Make sure Errors are Empty
-                if(empty($data['email_err']) && empty($data['name_err']) && empty($data['password_err']) && empty($data['confirm_password_err'])) {
+                if(empty($data['email_err']) && empty($data['name_err']) && empty($data['password_err']) && empty($data['confirm_password_err'])&&empty($data['age_err'])&&empty($data['username_err'])) {
                     // All fields are valid.
 
                     // Hash Password
